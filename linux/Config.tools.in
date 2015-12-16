@@ -26,4 +26,20 @@ config BR2_LINUX_KERNEL_TOOL_PERF
 
 	  https://perf.wiki.kernel.org/
 
+config BR2_LINUX_KERNEL_TOOL_USBIP
+	bool "usbipd"
+	help
+	  The USB/IP Project aims to develop a general USB device sharing
+	  system over IP network. To share USB devices between computers
+	  with their full functionality, USB/IP encapsulates "USB I/O
+	  messages" into TCP/IP payloads and transmits them between
+	  computers. Original USB device drivers and applications can be also
+	  used for remote USB devices without any modification of them.
+
+	  This will build and install the userspace 'usbipd'
+	  command. It is up to the user to ensure that the kernel
+	  configuration has all the suitable options enabled to allow a
+	  proper operation of 'usbipd'.
+
+	  http://usbip.sourceforge.net/
 endmenu
